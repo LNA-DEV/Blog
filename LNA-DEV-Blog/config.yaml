@@ -1,0 +1,100 @@
+baseURL: https://blog.lna-dev.net
+languageCode: en-us
+title: LNA-DEV-Blog
+theme: PaperMod
+paginate: 10
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - name: Archive
+      url: archives
+      weight: 30
+    - name: Search
+      url: search/
+      weight: 40
+
+params:
+  title: LNA-DEV-Blog
+  description: "This is my personal Blog. I will blog about programming / software engineering, Online-Privacy and maybe photography and some other topics."
+  keywords:
+    [
+      Blog,
+      LNA-DEV,
+      LNA-DEV-Blog,
+      IT,
+      Privacy. Photography,
+      Programming,
+      Software-Engineering,
+    ]
+  author: LNA-DEV
+  defaultTheme: dark
+  ShowReadingTime: true
+  DateFormat: "January 2, 2006"
+
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  assets:
+  favicon: "https://lna-dev.com/Assets/Metadata/Ping%C3%BCino-Square.png"
+  favicon16x16: "https://lna-dev.com/Assets/Metadata/Ping%C3%BCino-Square.png"
+  favicon32x32: "https://lna-dev.com/Assets/Metadata/Ping%C3%BCino-Square.png"
+  apple_touch_icon: "https://lna-dev.com/Assets/Metadata/Ping%C3%BCino-Square.png"
+  safari_pinned_tab: "https://lna-dev.com/Assets/Metadata/Ping%C3%BCino-Square.png"
+
+  homeInfoParams:
+    Title: "Hello World 👋"
+    Content: I am Lukas Nagel a Software-Engineer from Bavaria, Germany. Welcome to my Blog 😁
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/LNA-DEV"
+    # TODO
+    # - name: mastodon
+    #   url: "https://twitter.com/"
