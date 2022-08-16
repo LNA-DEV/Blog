@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-tags: [] #TODO
+tags: []
 author: "LNA-DEV"
 showToc: true
 TocOpen: false
