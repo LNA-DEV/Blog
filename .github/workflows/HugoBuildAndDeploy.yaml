@@ -13,8 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Hugo setup
-        uses: peaceiris/actions-hugo@v2.4.13    
+      - run: sudo snap install hugo -y
         
       - run: hugo
         working-directory: ./LNA-DEV-Blog/        
