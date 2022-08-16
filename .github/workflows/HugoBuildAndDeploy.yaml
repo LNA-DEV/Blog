@@ -13,16 +13,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      #TODO build
-
+      - run: sudo snap install hugo
+        
+      - run: hugo
+        working-directory: ./LNA-DEV-Blog/        
+        
+      - name: Archive artifact
+        shell: bash
+        if: runner.os != 'Windows'
+        run: tar -cvf ${{ runner.temp }}/artifact.tar -C ./LNA-DEV-Blog/public .
+    
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: apk
-          path: ./${{ env.NAME }}/build/app/outputs/flutter-apk/app-release.apk
-
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          
   DeployToGithubPages:
-    needs: BuildWeb
+    needs: HugoBuild
 
     permissions:
       pages: write # to deploy to Pages
