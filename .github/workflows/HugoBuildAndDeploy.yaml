@@ -13,16 +13,25 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      #TODO build
-
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.13    
+        
+      - run: hugo
+        working-directory: ./LNA-DEV-Blog/        
+        
+      - name: Archive artifact
+        shell: bash
+        if: runner.os != 'Windows'
+        run: tar -cvf ${{ runner.temp }}/artifact.tar -C ./LNA-DEV-Blog/pages .
+    
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: apk
-          path: ./${{ env.NAME }}/build/app/outputs/flutter-apk/app-release.apk
-
+          name: githup-pages
+          path: ${{ runner.temp }}/artifact.tar
+          
   DeployToGithubPages:
-    needs: BuildWeb
+    needs: HugoBuild
 
     permissions:
       pages: write # to deploy to Pages
