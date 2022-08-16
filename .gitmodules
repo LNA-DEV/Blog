@@ -1,3 +1,7 @@
 [submodule "LNA-DEV-Blog/themes/PaperModd"]
 	path = LNA-DEV-Blog/themes/PaperModd
 	url = https://github.com/adityatelange/hugo-PaperMod
+
+[submodule "LNA-DEV-Blog/themes/PaperMod"]
+	path = LNA-DEV-Blog/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod
