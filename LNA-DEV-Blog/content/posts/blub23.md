@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+title: "Blub23"
+date: 2022-08-16T21:15:20+02:00
+draft: false
 tags: [] #TODO
 author: "LNA-DEV"
 showToc: true

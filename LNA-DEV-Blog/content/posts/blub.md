@@ -1,14 +1,17 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
-tags: [] #TODO
+title: "Blub"
+date: 2022-08-16T21:11:49+02:00
+draft: false
+
+tags: ["TODO"]
 author: "LNA-DEV"
 showToc: true
 TocOpen: false
 hidemeta: false
 comments: false
-disableHLJS: false 
+# description: "Desc Text."
+# canonicalURL: "https://canonical.url/to/page"
+disableHLJS: false # to disable highlightjs
 disableShare: false
 hideSummary: false
 searchHidden: false
@@ -29,3 +32,4 @@ UseHugoToc: true
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
+
