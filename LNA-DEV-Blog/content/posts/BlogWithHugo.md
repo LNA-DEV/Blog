@@ -1,8 +1,8 @@
 ---
 title: "How to create a Blog with Hugo for free"
 date: 2022-08-17T15:59:48+02:00
-draft: true
-tags: []
+draft: false
+tags: ["How-To", "GitHub-Pages", "Hugo"]
 author: "LNA-DEV"
 showToc: true
 TocOpen: false
@@ -29,3 +29,13 @@ UseHugoToc: true
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
+
+## Introduction
+
+In this post I will teach you how to set up a blog like this with hugo and GitHub-Pages.
+
+## What you need
+
+- GitHub-Account
+- Markdown Knowledge
+- Basic understanding of Pipelines (This time GitHub-Actions)
