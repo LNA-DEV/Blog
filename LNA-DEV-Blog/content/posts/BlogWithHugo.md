@@ -234,6 +234,18 @@ markup:
 
 ### Create a Post
 
+I would always use the hugo commands to generate the files because it copies the standard configuration in the new file. I would generate the .md files always in the posts subfolder (If you want to create a post 😉). Only files from this folder will be shown as posts.
+
+```sh
+hugo new <filePath>
+```
+
+#### Example
+
+```sh
+hugo new posts/BlogWithHugo.md
+```
+
 ### Using a post template
 
 ### Build the page
