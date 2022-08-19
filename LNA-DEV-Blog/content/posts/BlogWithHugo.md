@@ -1,6 +1,6 @@
 ---
-title: "How to create a Blog with Hugo for free"
-date: 2022-08-17T15:59:48+02:00
+title: "How to create and host a Blog with Hugo for free"
+date: 2022-08-19T15:59:48+02:00
 draft: false
 tags: ["How-To", "GitHub-Pages", "Hugo"]
 author: "LNA-DEV"
@@ -18,16 +18,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-# cover:
-#     image: "https://lna-dev.com/Assets/Metadata/Ping%C3%BCino-Square.png" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/<path_to_repo>/content"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 ## Introduction
@@ -232,6 +222,14 @@ markup:
     # style: monokai
 ```
 
+### Using a post template
+
+```path
+/archetypes/
+```
+
+All files in the directory above can be used as templates for posts. The default.md file is the default file for generating new posts. All other files must be specified while creating a post.
+
 ### Create a Post
 
 I would always use the hugo commands to generate the files because it copies the standard configuration in the new file. I would generate the .md files always in the posts subfolder (If you want to create a post 😉). Only files from this folder will be shown as posts.
@@ -246,14 +244,96 @@ hugo new <filePath>
 hugo new posts/BlogWithHugo.md
 ```
 
-### Using a post template
-
 ### Build the page
 
+The hugo command builds the project into a website. The files created are stored in the /public/ folder.
+
+```sh
+hugo
+```
+
 ### Debug the page
+
+To view the page in the browser run the command below. There will be a link displayed which references the local hosted webpage.
+
+```sh
+hugo serve
+```
 
 ## Build and Deployment / Pipeline
 
 ### Setup GitHub-Pages
 
+<!-- TODO -->
+
 ### Add Pipeline YAML
+
+Create following file.
+
+```path
+.github/workflows/HugoBuildAndDeploy.yaml
+```
+
+Insert the following code into the file and adjust it to your needs. I described what I was doing per comments.  
+
+In this pipeline we will checkout the repo build it and after that deploy it to GitHub-Pages.
+
+```yaml
+name: HugoBuildAndDeploy
+
+on:
+  workflow_dispatch: # To have the ability to run the workflow manually
+
+  push:
+    branches: [main]
+
+env:
+  NAME: LNA-DEV-Blog #TODO Change to your project name
+
+jobs:
+  HugoBuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v3
+
+      # Install Hugo
+      - run: sudo snap install hugo
+
+      # Build the hugo repository
+      - run: hugo
+        working-directory: ./${{ env.NAME }}/
+
+      # Zip the Artifact for GitHubPages deployment
+      - name: Archive artifact
+        shell: bash
+        if: runner.os != 'Windows'
+        run: tar -cvf ${{ runner.temp }}/artifact.tar -C ./${{ env.NAME }}/public .
+
+      # Create a build artifact
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+
+  DeployToGithubPages:
+    needs: HugoBuild
+
+    # Setup GitHubPages
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Deploy the artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+```
