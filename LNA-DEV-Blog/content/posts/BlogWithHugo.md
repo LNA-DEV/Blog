@@ -264,7 +264,12 @@ hugo serve
 
 ### Setup GitHub-Pages
 
-<!-- TODO -->
+1. Go into the settings of your repo
+2. Select the GitHubPages tab
+3. Set the source to GitHubActions
+
+<!-- Only works if running -->
+![GitHubPages Settings](/BlogWithHugo/GitHubPages.png)
 
 ### Add Pipeline YAML
 
