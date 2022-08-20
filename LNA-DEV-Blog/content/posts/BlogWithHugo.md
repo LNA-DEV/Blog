@@ -2,7 +2,7 @@
 title: "How to create and host a Blog with Hugo for free"
 date: 2022-08-19T15:59:48+02:00
 draft: false
-tags: ["How-To", "GitHub-Pages", "Hugo"]
+tags: ["How-To", "GitHub-Pages", "Hugo", "Coding"]
 author: "LNA-DEV"
 showToc: true
 TocOpen: false
