@@ -5,48 +5,43 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![wakatime](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/d00ffd23-ef14-4b48-aa98-9f75f9746267.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/d00ffd23-ef14-4b48-aa98-9f75f9746267?style=for-the-badge&logo=appveyor)
+[![HugoBuildAndDeploy](https://img.shields.io/github/workflow/status/LNA-DEV/Blog/HugoBuildAndDeploy?style=for-the-badge)](https://github.com/LNA-DEV/Blog/actions/workflows/HugoBuildAndDeploy.yaml)  
 
 <!-- PROJECT LOGO -->
-<!-- TODO Change the Link -->
-<!-- TODO Change the image -->
 <br />
 <div align="center">
-  <a href="https://github.com/lna-dev/README-TEMPLATE">
+  <a href="https://github.com/lna-dev/Blog">
     <img src="https://lna-dev.com/Assets/Metadata/Pingüino-Square.png" alt="Logo" width="80" height="80">
   </a>
 
-<!-- TODO Change the project name -->
-### README-Template
+### LNA-DEV-Blog
 
-<!-- TODO Change the description -->
-In this repository I have created a README-Template based on Best-README-Template
-
+In this repository lives the code and content for my personal Blog
 <p align="center">
 
 <br />
 
-<!-- TODO Change the Link -->
-<a href="https://lna-dev.com"><strong>Explore the Project »</strong></a>
+<a href="https://blog.lna-dev.net"><strong>Explore the Project »</strong></a>
 <br />
 <br />
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Report Bug</a>
+<a href="https://github.com/lna-dev/Blog/issues">Report Bug</a>
 ·
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Request Feature</a>
+<a href="https://github.com/lna-dev/Blog/issues">Request Feature</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project 🗺️
 
-<!-- TODO Tell the world about your project -->
-Here you can describe your project a little bit more. Explain the world your thoughts and what your project does. Have fun and build something.
+In this blog I write about anything of my interest. It will focus on coding / software-engineering but maybe I will write a little bit about photography and some other interesting things. The blog is written with hugo. You can check my post about how to set this up if your interested. It gets deployed via GitHubPages and is completely free. Hugo also is a content management system in which all posts are stored. Those posts are all written in markdown 🚀
 
 <br>
 
 ## Build With 🏗️
 
-<!-- TODO Go to https://github.com/Ileriayo/markdown-badges and search for a fitting batch🙃 -->
-
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)  
+![Hugo](https://img.shields.io/badge/Hugo-blue?style=for-the-badge&logo=hugo)  
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
 
@@ -55,13 +50,11 @@ Here you can describe your project a little bit more. Explain the world your tho
 <!-- CONTRIBUTING -->
 ## Contributing ✨
 
-<!-- TODO Customize the contributing text -->
-If you have any ideas or want to contribute yourself... go for it. I really appreciate it if some of you have cool ideas🚀
+If this project contains any security vulnerabilities please report them to me. Post requests are also very welcome 😄
 
 <br>
 
 <!-- LICENSE -->
-<!-- TODO Add the License description -->
 ## License 📝
 
 The code is distributed under the MIT License. See `LICENSE` for more information.
@@ -69,23 +62,20 @@ The code is distributed under the MIT License. See `LICENSE` for more informatio
 <br>
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- TODO Add your acknowledgments -->
 ## Acknowledgments 🙏
 
+- [Hugo-PaperMod-Theme](https://github.com/adityatelange/hugo-PaperMod)
 - [LNA-DEV README-Template](https://github.com/lna-dev/README-Template)
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [Markdown-Badges](https://github.com/Ileriayo/markdown-badges)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- TODO Update your user name -->
-<!-- TODO Update your project name -->
-[contributors-shield]: https://img.shields.io/github/contributors/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[contributors-url]: https://github.com/lna-dev/README-TEMPLATE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[forks-url]: https://github.com/lna-dev/README-TEMPLATE/network/members
-[stars-shield]: https://img.shields.io/github/stars/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[stars-url]: https://github.com/lna-dev/README-TEMPLATE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[issues-url]: https://github.com/lna-dev/README-TEMPLATE/issues
-[license-shield]: https://img.shields.io/github/license/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[license-url]: https://github.com/lna-dev/README-TEMPLATE/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/lna-dev/Blog.svg?style=for-the-badge
+[contributors-url]: https://github.com/lna-dev/Blog/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lna-dev/Blog.svg?style=for-the-badge
+[forks-url]: https://github.com/lna-dev/Blog/network/members
+[stars-shield]: https://img.shields.io/github/stars/lna-dev/Blog.svg?style=for-the-badge
+[stars-url]: https://github.com/lna-dev/Blog/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lna-dev/Blog.svg?style=for-the-badge
+[issues-url]: https://github.com/lna-dev/Blog/issues
+[license-shield]: https://img.shields.io/github/license/lna-dev/Blog.svg?style=for-the-badge
+[license-url]: https://github.com/lna-dev/Blog/blob/master/LICENSE
