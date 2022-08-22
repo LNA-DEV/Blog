@@ -19,3 +19,15 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 ---
+
+## What is Markdown
+
+Markdown is a lightweight and simple markup language. You can think about it like HTML. You can structure your Content in an easy to use way. Also the code is very easy to read. Your code gets compiled into a visually better looking page by your Markdown-Engine for example: GitHub, VsCode. Another benefit of Markdown is that it can be easily converted into a webpage. For example this whole blog is written in Markdown.
+
+## How to get started
+
+1. Create a new file in your favorite editor which supports Markdown. (For example: VsCode)  
+2. This file should end with .md (Short for MarkDown)
+
+## Syntax
+<!-- TODO -->
