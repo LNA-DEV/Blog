@@ -24,16 +24,12 @@ outputs:
 
 menu:
   main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
       weight: 10
-    - name: Archive
-      url: archives
+    - name: Timeline
+      url: timeline
       weight: 30
     - name: Search
       url: search/
