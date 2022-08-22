@@ -1,6 +1,6 @@
 ---
-title: "Archive"
-layout: "archives"
-url: "/archives/"
-summary: archives
+title: "Timeline"
+layout: "archives" # This defines the structure of the page
+url: "/timeline/"
+summary: timeline
 ---
