@@ -41,7 +41,7 @@ In this blog I write about anything of my interest. It will focus on coding / so
 ## Build With 🏗️
 
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)  
-![Hugo](https://img.shields.io/badge/Hugo-blue?style=for-the-badge&logo=hugo)  
+![Hugo](https://img.shields.io/badge/Hugo-black?style=for-the-badge&logo=hugo)  
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
 
