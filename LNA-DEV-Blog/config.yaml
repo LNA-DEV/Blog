@@ -37,7 +37,7 @@ languages:
       main:
         - identifier: tags
           name: Tags
-          url: /tags/
+          url: /de/tags/
           weight: 10
         - name: Timeline
           url: /de/timeline
