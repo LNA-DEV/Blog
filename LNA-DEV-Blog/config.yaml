@@ -9,9 +9,7 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 
-# languageCode: en-us
 defaultContentLanguage: en
-
 languages:
   en:
     contentDir: content/English
