@@ -1,9 +1,6 @@
 baseURL: https://blog.lna-dev.net
-languageCode: en-us
-title: LNA-DEV-Blog
 theme: PaperMod
 paginate: 10
-
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -11,6 +8,43 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
+
+defaultContentLanguage: en
+languages:
+  en:
+    contentDir: content/English
+    title: LNA-DEV-Blog
+    weight: 1
+    menu:
+      main:
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 10
+        - name: Timeline
+          url: timeline
+          weight: 30
+        - name: Search
+          url: search/
+          weight: 40
+
+  de:
+    contentDir: content/German
+    languageName: Deutsch
+    title: LNA-DEV-Blog
+    weight: 1
+    menu:
+      main:
+        - identifier: tags
+          name: Tags
+          url: /de/tags/
+          weight: 10
+        - name: Timeline
+          url: /de/timeline
+          weight: 30
+        - name: Search
+          url: search/
+          weight: 40
 
 minify:
   disableXML: true
@@ -21,19 +55,6 @@ outputs:
     - HTML
     - RSS
     - JSON
-
-menu:
-  main:
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 10
-    - name: Timeline
-      url: timeline
-      weight: 30
-    - name: Search
-      url: search/
-      weight: 40
 
 params:
   title: LNA-DEV-Blog
