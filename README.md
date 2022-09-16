@@ -34,6 +34,7 @@ In this repository lives the code and content for my personal Blog
 <!-- ABOUT THE PROJECT -->
 ## About The Project 🗺️
 
+⚠️ This repository got merged with my personal website ⚠️  
 In this blog I write about anything of my interest. It will focus on coding / software-engineering but maybe I will write a little bit about photography and some other interesting things. The blog is written with hugo. You can check my post about how to set this up if your interested. It gets deployed via GitHubPages and is completely free. Hugo also is a content management system in which all posts are stored. Those posts are all written in markdown 🚀
 
 <br>
